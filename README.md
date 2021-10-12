@@ -1,6 +1,7 @@
 # Rubi and Furigana
 
 This plugin adds a new command `Rubi` (can be found in `Edit` menu, Editor toolbar, or Keyboard Shortcut) that insert `<ruby>` tag into formatted text to display furigana.
+	- It only works in markdown editor. The current WYSIWYG editor of Joplin is quite problematic, so I have no use for it at the moment.
 
 ## Usage:
 
@@ -12,7 +13,7 @@ Select text formatted similar to the ones below:
 example(ɪɡˈzæmpl̩)
 ```
 
-Activate the Rubi command by clicking on the menu item, the toolbar button, or the shortcut (Default: `CmdOrCtrl+R`) and turn them into something like this:
+Activate the Rubi command by clicking on the menu item, the toolbar button, or the shortcut and turn them into something like this:
 
 ```
 <ruby>漢字<rt>かんじ</rt></ruby>
@@ -35,9 +36,9 @@ The command is only activated when it found an equal number of open and close pu
 
 ## Settings
 
-You can define which special characters will be turn into `<rt>` and `</rt>` in the plugin settings.
+You can define which special characters will be turn into `<rt>` (Default: `([{（「『` ) and `</rt>` (Default: `)]}）」』`) in the plugin settings.
 
-Shortcut can be changed in the shortcut editor.
+Shortcut (Default: `CmdOrCtrl+R`) can be changed in the shortcut editor.
 
 
 

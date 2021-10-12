@@ -92,7 +92,7 @@ joplin.plugins.register({
 
 				const newText = toggleSelectionWithRubi(selectedText,rubiOpens,rubiCloses);
 				
-				await joplin.commands.execute('replaceSelection', newText);
+				await joplin.commands.execute('editor.execCommand', {name: "replaceSelection", args: [newText, "around"]});
 				await joplin.commands.execute('editor.focus');
 			}
 		});
